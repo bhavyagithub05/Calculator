@@ -1,1 +1,1 @@
-It is a fully functional calculator with many interactive features like scientific calculation, unit conversion, manage history
+It is a fully functional calculator with many interactive features like scientific calculation, unit conversion, manage history and many more
