@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <div class="calculator">
+        <p>Calculator</p>
+        <div class="space">
+            <div class="operations"></div>
+            <div class="bar">
+                <div class="bar-1">
+                    <div class="material-symbols-outlined">history</div>
+                    <div class="material-symbols-outlined">straighten</div>
+                    <div class="material-symbols-outlined">calculate</div>
+                </div>
+                <div id="backspace" class="material-symbols-outlined">backspace</div>
+            </div>
+        </div>
+        <div class="operators">
+                <button id ="fully-clear" class="op">C</button>
+                <button id ="Brackets" class="op">()</button>
+                <button id ="percent" class="op symbol">%</button>
+                <button id ="oblus" class="op symbol">÷</button>
+                <button id ="seven" class="op operand">7</button>
+                <button id ="eight" class="op operand">8</button>
+                <button id ="nine" class="op operand">9</button>
+                <button id="multiply" class="material-symbols-outlined op symbol">×</button>
+                <button id ="four" class="op operand">4</button>
+                <button id ="five" class="op operand">5</button>
+                <button id ="six" class="op operand">6</button>
+                <button id ="minus" class="material-symbols-outlined op symbol">-</button>
+                <button id ="one" class="op operand">1</button>
+                <button id ="two" class="op operand">2</button>
+                <button id ="three" class="op operand">3</button>
+                <button id ="plus" class="op symbol">+</button>
+                <button id ="plus-minus" class="op symbol">+/-</button>
+                <button id ="zero" class="op operand">0</button>
+                <button id ="dot" class="op operand">.</button>
+                <button id ="result" class="material-symbols-outlined op">equal</button>
+        </div> 
+    </div>
+
+    <!-- Unit Converter -->
+    <div class="unit-converter" style="display: none;">
+        <div class="converter-header">
+            <h3>Unit Converter</h3>
+            <span class="material-symbols-outlined close-converter">close</span>
+        </div>
+        <div class="converter-options">
+            <select id="conversion-type">
+                <option value="length">Length</option>
+                <option value="weight">Weight</option>
+                <option value="temperature">Temperature</option>
+                <option value="area">Area</option>
+            </select>
+        </div>
+        <div class="converter-inputs">
+            <div class="input-group">
+                <input type="number" id="from-value" placeholder="Value">
+                <select id="from-unit"></select>
+            </div>
+            <div class="input-group">
+                <input type="number" id="to-value" placeholder="Result" readonly>
+                <select id="to-unit"></select>
+            </div>
+        </div>
+        <button id="convert-btn">Convert</button>
+    </div>
+
+    <!-- History Panel -->
+    <div class="history-panel" style="display: none;">
+        <div class="history-header">
+            <h3>Calculation History</h3>
+            <span class="material-symbols-outlined close-history">close</span>
+        </div>
+        <div class="history-items">
+            <!-- History items will be added here dynamically -->
+        </div>
+        <button id="clear-history">Clear History</button>
+    </div>
+
+    <!-- Advanced Operations Panel -->
+    <div class="advanced-panel" style="display: none;">
+        <div class="advanced-header">
+            <h3>Advanced Operations</h3>
+            <span class="material-symbols-outlined close-advanced">close</span>
+        </div>
+        <div class="advanced-buttons">
+            <button class="adv-op" data-op="sqrt">√x</button>
+            <button class="adv-op" data-op="power">xʸ</button>
+            <button class="adv-op" data-op="square">x²</button>
+            <button class="adv-op" data-op="cube">x³</button>
+            <button class="adv-op" data-op="sin">sin</button>
+            <button class="adv-op" data-op="cos">cos</button>
+            <button class="adv-op" data-op="tan">tan</button>
+            <button class="adv-op" data-op="log">log</button>
+            <button class="adv-op" data-op="ln">ln</button>
+            <button class="adv-op" data-op="pi">π</button>
+            <button class="adv-op" data-op="e">e</button>
+            <button class="adv-op" data-op="fact">x!</button>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+</html>
